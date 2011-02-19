@@ -16,6 +16,8 @@
 		49B43AF413105118007F2A77 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B43AF213105118007F2A77 /* MainWindow.xib */; };
 		49B43AF713105118007F2A77 /* BouncyNessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B43AF613105118007F2A77 /* BouncyNessViewController.m */; };
 		49B43AFA13105118007F2A77 /* BouncyNessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B43AF813105118007F2A77 /* BouncyNessViewController.xib */; };
+		49B43B0213105153007F2A77 /* DNAnimView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B43B0113105153007F2A77 /* DNAnimView.m */; };
+		49B43B04131060A3007F2A77 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B43B03131060A3007F2A77 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +25,19 @@
 		49B43AE013105118007F2A77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		49B43AE213105118007F2A77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		49B43AE413105118007F2A77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		49B43AE813105118007F2A77 /* BouncyNess-Info.plist */ = {isa = PBXFileReference; path = "BouncyNess-Info.plist"; sourceTree = "<group>"; };
+		49B43AE813105118007F2A77 /* BouncyNess-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BouncyNess-Info.plist"; sourceTree = "<group>"; };
 		49B43AEA13105118007F2A77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		49B43AEC13105118007F2A77 /* BouncyNess-Prefix.pch */ = {isa = PBXFileReference; path = "BouncyNess-Prefix.pch"; sourceTree = "<group>"; };
+		49B43AEC13105118007F2A77 /* BouncyNess-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BouncyNess-Prefix.pch"; sourceTree = "<group>"; };
 		49B43AED13105118007F2A77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		49B43AEF13105118007F2A77 /* BouncyNessAppDelegate.h */ = {isa = PBXFileReference; path = BouncyNessAppDelegate.h; sourceTree = "<group>"; };
+		49B43AEF13105118007F2A77 /* BouncyNessAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BouncyNessAppDelegate.h; sourceTree = "<group>"; };
 		49B43AF013105118007F2A77 /* BouncyNessAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BouncyNessAppDelegate.m; sourceTree = "<group>"; };
 		49B43AF313105118007F2A77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		49B43AF513105118007F2A77 /* BouncyNessViewController.h */ = {isa = PBXFileReference; path = BouncyNessViewController.h; sourceTree = "<group>"; };
+		49B43AF513105118007F2A77 /* BouncyNessViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BouncyNessViewController.h; sourceTree = "<group>"; };
 		49B43AF613105118007F2A77 /* BouncyNessViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BouncyNessViewController.m; sourceTree = "<group>"; };
 		49B43AF913105118007F2A77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BouncyNessViewController.xib; sourceTree = "<group>"; };
+		49B43B0013105153007F2A77 /* DNAnimView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAnimView.h; sourceTree = "<group>"; };
+		49B43B0113105153007F2A77 /* DNAnimView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAnimView.m; sourceTree = "<group>"; };
+		49B43B03131060A3007F2A77 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B43B04131060A3007F2A77 /* QuartzCore.framework in Frameworks */,
 				49B43AE113105118007F2A77 /* UIKit.framework in Frameworks */,
 				49B43AE313105118007F2A77 /* Foundation.framework in Frameworks */,
 				49B43AE513105118007F2A77 /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +58,7 @@
 		49B43AD113105117007F2A77 = {
 			isa = PBXGroup;
 			children = (
+				49B43B03131060A3007F2A77 /* QuartzCore.framework */,
 				49B43AE613105118007F2A77 /* BouncyNess */,
 				49B43ADF13105118007F2A77 /* Frameworks */,
 				49B43ADD13105118007F2A77 /* Products */,
@@ -86,6 +93,8 @@
 				49B43AF613105118007F2A77 /* BouncyNessViewController.m */,
 				49B43AF813105118007F2A77 /* BouncyNessViewController.xib */,
 				49B43AE713105118007F2A77 /* Supporting Files */,
+				49B43B0013105153007F2A77 /* DNAnimView.h */,
+				49B43B0113105153007F2A77 /* DNAnimView.m */,
 			);
 			path = BouncyNess;
 			sourceTree = "<group>";
@@ -167,6 +176,7 @@
 				49B43AEE13105118007F2A77 /* main.m in Sources */,
 				49B43AF113105118007F2A77 /* BouncyNessAppDelegate.m in Sources */,
 				49B43AF713105118007F2A77 /* BouncyNessViewController.m in Sources */,
+				49B43B0213105153007F2A77 /* DNAnimView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +218,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
@@ -223,7 +233,7 @@
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
