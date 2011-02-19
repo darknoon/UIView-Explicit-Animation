@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49B43AE113105118007F2A77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B43AE013105118007F2A77 /* UIKit.framework */; };
+		49B43AE313105118007F2A77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B43AE213105118007F2A77 /* Foundation.framework */; };
+		49B43AE513105118007F2A77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B43AE413105118007F2A77 /* CoreGraphics.framework */; };
+		49B43AEB13105118007F2A77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49B43AE913105118007F2A77 /* InfoPlist.strings */; };
+		49B43AEE13105118007F2A77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B43AED13105118007F2A77 /* main.m */; };
+		49B43AF113105118007F2A77 /* BouncyNessAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B43AF013105118007F2A77 /* BouncyNessAppDelegate.m */; };
+		49B43AF413105118007F2A77 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B43AF213105118007F2A77 /* MainWindow.xib */; };
+		49B43AF713105118007F2A77 /* BouncyNessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B43AF613105118007F2A77 /* BouncyNessViewController.m */; };
+		49B43AFA13105118007F2A77 /* BouncyNessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B43AF813105118007F2A77 /* BouncyNessViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		49B43ADC13105118007F2A77 /* BouncyNess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BouncyNess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49B43AE013105118007F2A77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		49B43AE213105118007F2A77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		49B43AE413105118007F2A77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		49B43AE813105118007F2A77 /* BouncyNess-Info.plist */ = {isa = PBXFileReference; path = "BouncyNess-Info.plist"; sourceTree = "<group>"; };
+		49B43AEA13105118007F2A77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49B43AEC13105118007F2A77 /* BouncyNess-Prefix.pch */ = {isa = PBXFileReference; path = "BouncyNess-Prefix.pch"; sourceTree = "<group>"; };
+		49B43AED13105118007F2A77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49B43AEF13105118007F2A77 /* BouncyNessAppDelegate.h */ = {isa = PBXFileReference; path = BouncyNessAppDelegate.h; sourceTree = "<group>"; };
+		49B43AF013105118007F2A77 /* BouncyNessAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BouncyNessAppDelegate.m; sourceTree = "<group>"; };
+		49B43AF313105118007F2A77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		49B43AF513105118007F2A77 /* BouncyNessViewController.h */ = {isa = PBXFileReference; path = BouncyNessViewController.h; sourceTree = "<group>"; };
+		49B43AF613105118007F2A77 /* BouncyNessViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BouncyNessViewController.m; sourceTree = "<group>"; };
+		49B43AF913105118007F2A77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BouncyNessViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49B43AD913105118007F2A77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B43AE113105118007F2A77 /* UIKit.framework in Frameworks */,
+				49B43AE313105118007F2A77 /* Foundation.framework in Frameworks */,
+				49B43AE513105118007F2A77 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49B43AD113105117007F2A77 = {
+			isa = PBXGroup;
+			children = (
+				49B43AE613105118007F2A77 /* BouncyNess */,
+				49B43ADF13105118007F2A77 /* Frameworks */,
+				49B43ADD13105118007F2A77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49B43ADD13105118007F2A77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49B43ADC13105118007F2A77 /* BouncyNess.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49B43ADF13105118007F2A77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49B43AE013105118007F2A77 /* UIKit.framework */,
+				49B43AE213105118007F2A77 /* Foundation.framework */,
+				49B43AE413105118007F2A77 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49B43AE613105118007F2A77 /* BouncyNess */ = {
+			isa = PBXGroup;
+			children = (
+				49B43AEF13105118007F2A77 /* BouncyNessAppDelegate.h */,
+				49B43AF013105118007F2A77 /* BouncyNessAppDelegate.m */,
+				49B43AF213105118007F2A77 /* MainWindow.xib */,
+				49B43AF513105118007F2A77 /* BouncyNessViewController.h */,
+				49B43AF613105118007F2A77 /* BouncyNessViewController.m */,
+				49B43AF813105118007F2A77 /* BouncyNessViewController.xib */,
+				49B43AE713105118007F2A77 /* Supporting Files */,
+			);
+			path = BouncyNess;
+			sourceTree = "<group>";
+		};
+		49B43AE713105118007F2A77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49B43AE813105118007F2A77 /* BouncyNess-Info.plist */,
+				49B43AE913105118007F2A77 /* InfoPlist.strings */,
+				49B43AEC13105118007F2A77 /* BouncyNess-Prefix.pch */,
+				49B43AED13105118007F2A77 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49B43ADB13105118007F2A77 /* BouncyNess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49B43AFD13105118007F2A77 /* Build configuration list for PBXNativeTarget "BouncyNess" */;
+			buildPhases = (
+				49B43AD813105118007F2A77 /* Sources */,
+				49B43AD913105118007F2A77 /* Frameworks */,
+				49B43ADA13105118007F2A77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BouncyNess;
+			productName = BouncyNess;
+			productReference = 49B43ADC13105118007F2A77 /* BouncyNess.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49B43AD313105117007F2A77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Darknoon;
+			};
+			buildConfigurationList = 49B43AD613105117007F2A77 /* Build configuration list for PBXProject "BouncyNess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 49B43AD113105117007F2A77;
+			productRefGroup = 49B43ADD13105118007F2A77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49B43ADB13105118007F2A77 /* BouncyNess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49B43ADA13105118007F2A77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B43AEB13105118007F2A77 /* InfoPlist.strings in Resources */,
+				49B43AF413105118007F2A77 /* MainWindow.xib in Resources */,
+				49B43AFA13105118007F2A77 /* BouncyNessViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49B43AD813105118007F2A77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B43AEE13105118007F2A77 /* main.m in Sources */,
+				49B43AF113105118007F2A77 /* BouncyNessAppDelegate.m in Sources */,
+				49B43AF713105118007F2A77 /* BouncyNessViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49B43AE913105118007F2A77 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49B43AEA13105118007F2A77 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		49B43AF213105118007F2A77 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49B43AF313105118007F2A77 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		49B43AF813105118007F2A77 /* BouncyNessViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49B43AF913105118007F2A77 /* en */,
+			);
+			name = BouncyNessViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49B43AFB13105118007F2A77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		49B43AFC13105118007F2A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		49B43AFE13105118007F2A77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BouncyNess/BouncyNess-Prefix.pch";
+				INFOPLIST_FILE = "BouncyNess/BouncyNess-Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		49B43AFF13105118007F2A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BouncyNess/BouncyNess-Prefix.pch";
+				INFOPLIST_FILE = "BouncyNess/BouncyNess-Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49B43AD613105117007F2A77 /* Build configuration list for PBXProject "BouncyNess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49B43AFB13105118007F2A77 /* Debug */,
+				49B43AFC13105118007F2A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49B43AFD13105118007F2A77 /* Build configuration list for PBXNativeTarget "BouncyNess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49B43AFE13105118007F2A77 /* Debug */,
+				49B43AFF13105118007F2A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49B43AD313105117007F2A77 /* Project object */;
+}
