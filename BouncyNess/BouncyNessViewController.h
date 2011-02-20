@@ -10,10 +10,13 @@
 
 @class DNAnimView;
 @interface BouncyNessViewController : UIViewController {
-    
-	DNAnimView *bouncyView;
+	UIView *bouncyView;
+	UIImageView *shadowView;
+	//Store this incase we interrupt our animation
+	CGPoint bouncyViewCenter;
 }
-@property (nonatomic, retain) IBOutlet DNAnimView *bouncyView;
+@property (nonatomic, retain) IBOutlet UIView *bouncyView;
+@property (nonatomic, retain) IBOutlet UIView *shadowView;
 
 - (IBAction)animate:(id)sender;
 

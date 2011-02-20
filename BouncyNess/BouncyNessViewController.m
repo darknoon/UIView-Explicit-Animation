@@ -8,10 +8,11 @@
 
 #import "BouncyNessViewController.h"
 
-#import "DNAnimView.h"
+#import "UIView+ExplicitAnimation.h"
 
 @implementation BouncyNessViewController
 @synthesize bouncyView;
+@synthesize shadowView;
 
 - (void)dealloc
 {
@@ -27,55 +28,58 @@
 }
 #pragma mark -
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+{
+	[self animate:nil];
+}
 
 - (IBAction)animate:(id)sender;
 {
-	[UIView beginAnimations:nil context:NULL];
-	[UIView setAnimationDuration:4.0];
 	
-	double omega = 20.0;
-	double zeta = 0.33;
-	[DNAnimView setAnimationTimingBlock:^(double t){
-		double beta = sqrt(1 - zeta * zeta);
-		double phi = atan(beta / zeta);
-		double result = 1.0 + -1.0 / beta * exp(-zeta * omega * t) * sin(beta * omega * t + phi);
-		return result;
-	}];
-	
-	__block double v = -22;
-	__block double p = 0;
+	CGPoint startCenter = ((CALayer *)[bouncyView.layer presentationLayer]).position;
+	CGPoint endCenter = bouncyViewCenter;
+
+	//Scope for variables in physics simulation
+	__block double v = -402;
+	__block double p = startCenter.y;
 	__block double pt = 0;
 	double restitution = 0.7;
-	double g = 80;
-	double dt = 1.0/60.0;
-	[DNAnimView setAnimationTimingBlock:^(double t){
+	double g = 1080;
+	double duration = 2.0 + 0.01 * (endCenter.y - startCenter.y); //Add an additional second for each 100 pixel of height we have
+	
+	NSLog(@"Duration :%lf", duration);
+	
+	[UIView animateExplicitlyWithDuration:duration frameRate:30.0 animations:^(double t, double dt) {
+		DNUIViewExplicitAnimationProxy *objectProxy = [bouncyView explicitFrameProxy];
+		DNUIViewExplicitAnimationProxy *shadowProxy = [shadowView explicitFrameProxy];
+		
+		//Physics simulation here :)
 		pt = t;
-		if (p > 1.0) {
+		if (p > endCenter.y) {
 			v = -restitution * v;
-			p = 1.0;
+			p = endCenter.y;
 		} else {
 			v += g * dt;
 			p += dt * v;
 		}
-		return p;
-	}];
-	
-	CGRect bouncyViewFrame = bouncyView.frame;
-	bouncyViewFrame.origin.y += 10.f;
-	bouncyView.frame = bouncyViewFrame;
-	
-	[UIView commitAnimations];
+		objectProxy.alpha = 1.0 + 0.5 * sin(0.1 * t); 
+		objectProxy.center = (CGPoint) {.x = endCenter.x, .y = p};
+		
+		double d = endCenter.y - p;
+		shadowProxy.alpha = 0.8 / (1.0 + 0.01 * d);
+		shadowProxy.transform = CGAffineTransformMakeScale(1.0 + 0.005 * d, 1.0 + 0.005 * d);
+	}];	
 }
 
 #pragma mark - View lifecycle
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	bouncyViewCenter = bouncyView.center;
+	shadowView.center = (CGPoint){.x = bouncyViewCenter.x, .y = CGRectGetMaxY(bouncyView.frame)};
+	shadowView.alpha = 0.8;
 }
-*/
 
 - (void)viewDidUnload
 {

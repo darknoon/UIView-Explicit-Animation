@@ -16,8 +16,11 @@
 		49B43AF413105118007F2A77 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B43AF213105118007F2A77 /* MainWindow.xib */; };
 		49B43AF713105118007F2A77 /* BouncyNessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B43AF613105118007F2A77 /* BouncyNessViewController.m */; };
 		49B43AFA13105118007F2A77 /* BouncyNessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B43AF813105118007F2A77 /* BouncyNessViewController.xib */; };
-		49B43B0213105153007F2A77 /* DNAnimView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B43B0113105153007F2A77 /* DNAnimView.m */; };
+		49B43B0213105153007F2A77 /* UIView+ExplicitAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B43B0113105153007F2A77 /* UIView+ExplicitAnimation.m */; };
 		49B43B04131060A3007F2A77 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B43B03131060A3007F2A77 /* QuartzCore.framework */; };
+		49B43B08131095BA007F2A77 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B43B05131095BA007F2A77 /* Background@2x.png */; };
+		49B43B09131095BA007F2A77 /* Object@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B43B06131095BA007F2A77 /* Object@2x.png */; };
+		49B43B0A131095BA007F2A77 /* Shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B43B07131095BA007F2A77 /* Shadow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +38,12 @@
 		49B43AF513105118007F2A77 /* BouncyNessViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BouncyNessViewController.h; sourceTree = "<group>"; };
 		49B43AF613105118007F2A77 /* BouncyNessViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BouncyNessViewController.m; sourceTree = "<group>"; };
 		49B43AF913105118007F2A77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BouncyNessViewController.xib; sourceTree = "<group>"; };
-		49B43B0013105153007F2A77 /* DNAnimView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAnimView.h; sourceTree = "<group>"; };
-		49B43B0113105153007F2A77 /* DNAnimView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAnimView.m; sourceTree = "<group>"; };
+		49B43B0013105153007F2A77 /* UIView+ExplicitAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ExplicitAnimation.h"; sourceTree = "<group>"; };
+		49B43B0113105153007F2A77 /* UIView+ExplicitAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ExplicitAnimation.m"; sourceTree = "<group>"; };
 		49B43B03131060A3007F2A77 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		49B43B05131095BA007F2A77 /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		49B43B06131095BA007F2A77 /* Object@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Object@2x.png"; sourceTree = "<group>"; };
+		49B43B07131095BA007F2A77 /* Shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shadow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,6 @@
 		49B43AD113105117007F2A77 = {
 			isa = PBXGroup;
 			children = (
-				49B43B03131060A3007F2A77 /* QuartzCore.framework */,
 				49B43AE613105118007F2A77 /* BouncyNess */,
 				49B43ADF13105118007F2A77 /* Frameworks */,
 				49B43ADD13105118007F2A77 /* Products */,
@@ -76,6 +81,7 @@
 		49B43ADF13105118007F2A77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49B43B03131060A3007F2A77 /* QuartzCore.framework */,
 				49B43AE013105118007F2A77 /* UIKit.framework */,
 				49B43AE213105118007F2A77 /* Foundation.framework */,
 				49B43AE413105118007F2A77 /* CoreGraphics.framework */,
@@ -93,8 +99,11 @@
 				49B43AF613105118007F2A77 /* BouncyNessViewController.m */,
 				49B43AF813105118007F2A77 /* BouncyNessViewController.xib */,
 				49B43AE713105118007F2A77 /* Supporting Files */,
-				49B43B0013105153007F2A77 /* DNAnimView.h */,
-				49B43B0113105153007F2A77 /* DNAnimView.m */,
+				49B43B0013105153007F2A77 /* UIView+ExplicitAnimation.h */,
+				49B43B0113105153007F2A77 /* UIView+ExplicitAnimation.m */,
+				49B43B05131095BA007F2A77 /* Background@2x.png */,
+				49B43B06131095BA007F2A77 /* Object@2x.png */,
+				49B43B07131095BA007F2A77 /* Shadow@2x.png */,
 			);
 			path = BouncyNess;
 			sourceTree = "<group>";
@@ -163,6 +172,9 @@
 				49B43AEB13105118007F2A77 /* InfoPlist.strings in Resources */,
 				49B43AF413105118007F2A77 /* MainWindow.xib in Resources */,
 				49B43AFA13105118007F2A77 /* BouncyNessViewController.xib in Resources */,
+				49B43B08131095BA007F2A77 /* Background@2x.png in Resources */,
+				49B43B09131095BA007F2A77 /* Object@2x.png in Resources */,
+				49B43B0A131095BA007F2A77 /* Shadow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +188,7 @@
 				49B43AEE13105118007F2A77 /* main.m in Sources */,
 				49B43AF113105118007F2A77 /* BouncyNessAppDelegate.m in Sources */,
 				49B43AF713105118007F2A77 /* BouncyNessViewController.m in Sources */,
-				49B43B0213105153007F2A77 /* DNAnimView.m in Sources */,
+				49B43B0213105153007F2A77 /* UIView+ExplicitAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +265,9 @@
 				GCC_PREFIX_HEADER = "BouncyNess/BouncyNess-Prefix.pch";
 				INFOPLIST_FILE = "BouncyNess/BouncyNess-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -267,7 +281,9 @@
 				GCC_PREFIX_HEADER = "BouncyNess/BouncyNess-Prefix.pch";
 				INFOPLIST_FILE = "BouncyNess/BouncyNess-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
