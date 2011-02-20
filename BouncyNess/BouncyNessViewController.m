@@ -42,21 +42,18 @@
 	//Scope for variables in physics simulation
 	__block double v = -402;
 	__block double p = startCenter.y;
-	__block double pt = 0;
-	double restitution = 0.7;
+	double elasticity = 0.7;
 	double g = 1080;
 	double duration = 2.0 + 0.01 * (endCenter.y - startCenter.y); //Add an additional second for each 100 pixel of height we have
-	
-	NSLog(@"Duration :%lf", duration);
-	
+		
 	[UIView animateExplicitlyWithDuration:duration frameRate:30.0 animations:^(double t, double dt) {
 		DNUIViewExplicitAnimationProxy *objectProxy = [bouncyView explicitFrameProxy];
 		DNUIViewExplicitAnimationProxy *shadowProxy = [shadowView explicitFrameProxy];
 		
 		//Physics simulation here :)
-		pt = t;
-		if (p > endCenter.y) {
-			v = -restitution * v;
+		//If we would surpass the target location, bounce instead
+		if (p + dt * v > endCenter.y) {
+			v = -elasticity * v;
 			p = endCenter.y;
 		} else {
 			v += g * dt;
